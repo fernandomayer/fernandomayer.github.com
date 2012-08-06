@@ -3,7 +3,7 @@
 # ----------------------- #
 
 url: http://fernandomayer.github.com
-title: Fernando Mayer [site|blog]
+title: Fernando Mayer
 subtitle: from the open (source) world
 author: Fernando Mayer
 simple_search: http://google.com/search
@@ -17,7 +17,7 @@ date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
-subscribe_email: fernandomayer@gmail.com
+subscribe_email:
 # RSS feeds can list your email address if you like
 email:
 
@@ -62,7 +62,7 @@ default_asides: [asides/recent_posts.html, asides/github.html,
 
 # Github repositories
 github_user: fernandomayer
-github_repo_count: 0
+github_repo_count: 3
 github_show_profile_link: true
 github_skip_forks: true
 
