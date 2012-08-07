@@ -18,14 +18,14 @@ Voltando ao "Hello World" (e ao teste de configuração), na página da [Wikiped
 > print("Hello World!")
 [1] "Hello World!"
 ```
-Ou, de maneira mais similar à saída das outras linguagens em geral
+Ou, de maneira mais parecida à saída das outras linguagens em geral
 
 ``` r
 > cat("Hello World!\n")
 Hello World!
 ```
 
-Repare no `\n` no final da sentença. Ele é um *escape* e serve para adicionar uma nova linha ao final, uma herança da linguagem `C`.
+Repare no `\n` no final da sentença. Ele é um [*escape*](http://en.wikipedia.org/wiki/Escape_character) e serve para adicionar uma nova linha ao final, uma herança da linguagem `C`.
 
 E, se quisermos deixar com mais cara de programa, podemos criar uma função, que aqui vou chamar de `hw`
 
@@ -44,10 +44,10 @@ Hello World!
 
 Assim fica fácil perceber a utilidade de um programa tão simples como esse. Se você não sabia e queria aprender como funciona uma função no `R`, agora fica mais fácil entender, não?
 
-Tão simples quanto o programa, seria se quisesemos saber a probabilidade $P(\cdot)$ de sortear a letra `L` ao acaso, entre as letras das palavras `HELLO` e `WORLD` juntas. Esta probabilidade seria
+Tão simples quanto o programa, seria se quiséssemos saber a probabilidade $P(\cdot)$ de sortear a letra `L` ao acaso, entre as letras das palavras `HELLO` e `WORLD` juntas. Esta probabilidade seria
 
 $$
-P(X = L) = \frac{3}{10} \approx 0.3
+P(X = L) = \frac{3}{10} = 0.3
 $$
 
 Se você chegou até aqui, parabéns! Você e o Octopress passaram no teste de configuração!
