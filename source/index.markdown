@@ -5,7 +5,7 @@ sharing: true
 footer: true
 ---
 
-## `\\//`
+## `\V/`
 
 Você está na página pessoal de Fernando de Pol Mayer. Aqui você pode encontrar algumas informações sobre o que eu faço, trabalhos publicados, e meu [blog](/blog)! O blog tem o objetivo de compartilhar informações que vou descobrindo usando software livre.
 
@@ -24,4 +24,4 @@ Você pode me encontrar nos seguintes lugares:
 * [**Plataforma Lattes**](http://lattes.cnpq.br/2222077812442414)
 * [**Linkedin**](http://www.linkedin.com/pub/fernando-de-pol-mayer/56/48/36a)
 * [**Twitter**](https://twitter.com/fernando_mayer)
-
+* [**Last.fm**](http://www.last.fm/user/fernandomayer)
