@@ -1,7 +1,7 @@
 ---
 layout: page
 comments: false
-sharing: true
+sharing: false
 footer: true
 ---
 
