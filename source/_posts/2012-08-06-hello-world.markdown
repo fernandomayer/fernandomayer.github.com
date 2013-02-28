@@ -12,6 +12,8 @@ Esse é o primeiro post do blog, e assim como um [programa "Hello World!"](http:
 
 Como você pode ver, o blog foi construído através do [Octopress](http://octopress.org) (*A blogging framework for hackers*, como ele mesmo diz), que por sua vez foi baseado no [Jekyll](https://github.com/mojombo/jekyll/), que foi construído para gerar páginas de `HTML` estáticas no [GitHub](https://github.com). Mas isso é assunto para um post inteiro, já que esse é o objetivo do blog ;)
 
+<!-- more -->
+
 Voltando ao "Hello World" (e ao teste de configuração), na página da [Wikipedia linkada acima](http://pt.wikipedia.org/wiki/Programa_Ol%C3%A1_Mundo) está faltando uma forma de apresentar o programa no `R`! Portanto apresento aqui a maneira mais simples:
 
 ``` r
