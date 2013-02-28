@@ -7,21 +7,34 @@ footer: true
 
 ## `\V/`
 
-Você está na página pessoal de Fernando de Pol Mayer. Aqui você pode encontrar algumas informações sobre o que eu faço, trabalhos publicados, e meu [blog](/blog)! O blog tem o objetivo de compartilhar informações que vou descobrindo usando software livre.
+I'm Fernando de Pol Mayer, a Ph.D. candidate in [Statistics & Experimentation][1] at Universidade de São Paulo ([USP][]), Brazil. Originally, I have a bachelor degree in [Oceanography][] from Universidade do Vale do Itajaí ([UNIVALI][]), with a masters degree in [Ecology][] from Universidade Federal de Santa Catarina ([UFSC][]).
 
-Sou formado em [Oceanografia](http://www.univali.br/oceano) pela Universidade do Vale do Itajaí ([UNIVALI](http://www.univali.br)), e mestre em [Ecologia](http://poseco.ufsc.br) pela Universidade Federal de Santa Catarina ([UFSC](http://ufsc.br)). Atualmente sou professor substituto do Departamento de Ecologia e Zoologia ([ECZ/CCB](http://ecz.ccb.ufsc.br/)) da UFSC.
+My main research interests are in statistical models applied to environmental end ecological problems, specially those dealing with marine fisheries resources. In B.Sc. and M.Sc. my research was focused in applying Generalized Linear Models (and extensions) to fisheries data, advised by Dr. [Humber Agrelli de Andrade][Humber]. In my thesis I will (hopefully) try to develop and apply spatio-temporal models, advised by Dr. [Paulo Justiniano Ribeiro Jr.][PJ] at Laboratório de Estatística e Geoinformação ([LEG][]), Universidade Federal do Paraná ([UFPR][]).
 
-Tenho interesse no uso de modelos estatísticos aplicados na resolução de problemas relacionados à Ecologia e Oceanografia, especialmente àqueles relacionados à exploração de recursos pesqueiros marinhos.
+I truly believe in an [open source][OA] world. Software, data, research, $\ldots$, must be open, so we can rapidly grow the human knowledge. In my [blog](/blog) I intend to share what I discover about open souce software, mainly the [GNU/Linux][] operating system, the [R][] language and environment for statistical computing and graphics, and the document preparation system [$\rm \LaTeX$][Latex].
 
-Além disso, gosto de programar (e aprender outras linguagens), e para isso me apoio no software livre. E não apenas pela questão da liberdade (ou da *gratuidade*), mas também pela [filosofia](http://www.gnu.org/philosophy/) por trás do [conceito](http://en.wikipedia.org/wiki/Open_source). Utilizo o sistema operacional [GNU/Linux](http://www.gnu.org/gnu/linux-and-gnu.html), e os *softwares* [R](http://r-project.org) (para fazer as contas), [$\rm \LaTeX$](http://www.latex-project.org/) (para escrever textos, aulas e apresentações), ambos rodando no editor [Emacs](http://www.gnu.org/software/emacs/) (o ultra-universal).
+## Contact
 
-## Contato
+You can find me in
 
-Você pode me encontrar nos seguintes lugares:
-
-* **Email**: `fernandomayer` no Gmail
+* **Email**: `fernando.mayer` $\in$ {`gmail.com`, `usp.br`}
 * [**Mendeley**](http://www.mendeley.com/profiles/fernando-mayer)
-* [**Plataforma Lattes**](http://lattes.cnpq.br/2222077812442414)
-* [**Linkedin**](http://www.linkedin.com/pub/fernando-de-pol-mayer/56/48/36a)
+* [**Linkedin**](http://br.linkedin.com/in/fernandomayer)
+* [**Plataforma Lattes**](http://lattes.cnpq.br/2222077812442414) (Brazilian portuguese full CV)
 * [**Twitter**](https://twitter.com/fernando_mayer)
 * [**Last.fm**](http://www.last.fm/user/fernandomayer)
+
+[1]: http://www.en.esalq.usp.br/how-we-work/teaching/graduate/programs/agricultural-statistics-and-experimentation
+[USP]: http://www5.usp.br/en/
+[Oceanography]: http://www.univali.br/oceano
+[UNIVALI]: http://www.univali.br/english
+[Ecology]: http://poseco.ufsc.br
+[UFSC]: http://en.ufsc.br
+[Humber]: https://sites.google.com/site/humberandrade/
+[PJ]: http://www.leg.ufpr.br/~paulojus
+[LEG]: http://www.leg.ufpr.br
+[UFPR]: http://ufpr.br
+[OA]: http://en.wikipedia.org/wiki/Open_source
+[GNU/Linux]: http://en.wikipedia.org/wiki/Linux
+[R]: http://r-project.org
+[Latex]: http://www.latex-project.org/
