@@ -5,7 +5,7 @@ sharing: false # use false here to remove tweet button
 footer: true
 ---
 
-## `\V/`
+## About
 
 I'm Fernando de Pol Mayer, a Ph.D. candidate in [Statistics & Experimentation][1] at Universidade de São Paulo ([USP][]), Brazil. Originally, I have a bachelor degree in [Oceanography][] from Universidade do Vale do Itajaí ([UNIVALI][]), with a master's degree in [Ecology][] from Universidade Federal de Santa Catarina ([UFSC][]).
 
