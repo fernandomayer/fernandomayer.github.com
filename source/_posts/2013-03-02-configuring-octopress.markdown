@@ -24,6 +24,17 @@ Obviously, Octopress may have some disadvantages. The most clear to me are: (1) 
 
 Below I'll show the steps I made to put this site up and running. Obviously I followed the steps in the [Octopress setup page][1], but some things are not really obvious, so I'll put them here.
 
+## 0. Install git (and learn how to use it)
+
+First thing is to have some familiarity with [git][], or else we're going nowhere. To install git in Linux, use your package manager, as for example in Ubuntu
+
+``` bash
+sudo apt-get install git git-core git-man git-gui git-doc 
+```
+You may also need `ssh`, `openssh-server`, `openssh-client`, depending on your system. Then configure your [GitHub account][githelp] (if you still didn't).
+
+If you are not very familiar with git, read the [documentation][gitdoc], and learn by doing with [try-git][] at [codeschool][]. It is a very good idea to focus on [git-branching][], since we'll use branches hereafter.
+
 ## 1. Install Ruby
 
 Octopress requires [Ruby][] 1.9.3 to run. You can install it with your default package manager (*e.g.* apt, pacman), or with RVM, the Ruby Version Manager.
@@ -89,7 +100,7 @@ rake install
 
 ## 3. Publish from GitHub
 
-So far you've just build your Octopress site locally. To publish it from GitHub you have to create a new repository with your username followed by the GitHub domain. For example, my username is `fernandomayer`, so I've created a repository named `fernandomayer.github.com`. GitHub intelligently understands that the contents of this repository should be a website (any other names won't do it), and it will make it available at `http://fernandomayer.github.com`. (You can use [custom domains][2] though).
+So far you've just built your Octopress site locally. To publish it from GitHub you have to create a new repository with your username followed by the GitHub domain. For example, my username is `fernandomayer`, so I've created a repository named `fernandomayer.github.com`. GitHub intelligently understands that the contents of this repository should be a website (any other names won't do it), and it will make it available at `http://fernandomayer.github.com`. (You can use [custom domains][2] though).
 
 To finally setup your website to work with GitHub, use this `rake` task
 
@@ -97,39 +108,32 @@ To finally setup your website to work with GitHub, use this `rake` task
 rake setup_github_pages
 ```
 
-In summary this will configure everything you need:
+and follow the instructions. In summary this will configure everything you need:
 
 * create a `source` branch in which you'll work with the source files for your site
 * create a `master` branch inside `_deploy/` directory
 
-This is very important: GitHub will publish your site with the contents that are available in the `master` branch **only**. That means that everything under `_deploy/` will be used. All other files, that are in the `source` branch will be used as **working** files, *i.e.*, you will create, write and modify everything in the `source` branch (particularly at the `source/` directory), then Octopress will generate and deploy it to `_deploy/`. This is done with this two `rake` tasks:
+**This is very important**: GitHub will publish your site with the contents that are available in the `master` branch **only**. That means that everything under `_deploy/` will be used. All other files, that are in the `source` branch will be used as **working** files, *i.e.*, you will create, write and modify everything in the `source` branch (particularly at the `source/` directory), then Octopress will generate and deploy it to `_deploy/`. This is done with this two `rake` tasks:
 
 ``` bash
 rake generate
 rake deploy
 ```
 
-This will generate the appropriate files, copy them to `_deploy/` and `add`, `commit` and `push` to its `master` branch (automatically!). So, to keep record of your changes in git you will also have to add-commit-push the `source` branch
+This will generate the appropriate files, copy them to `_deploy/` and `add`, `commit` and `push` to its `master` branch (automatically!). So, to keep record of your changes in git you will also have to add-commit-push to the `source` branch
 
 ``` bash
 git add .
 git commit -m 'message'
 git push origin source
 ```
+At this point, you'll want to see your website (still with no modifications) at the default adress, e.g., `http://fernandomayer.github.com`. But, as you make changes (shown below), you'll want to see these changes instantly, right? You don't need to make all this process of generating, deploying, $\ldots$, every time you make a minor change. For that you can use this rake task
 
-## 4. Configure your site
-
-
-## 5. New pages and new posts
-
-From now on, your site should be available, altough with no real content. To start editing, open the `source/index.html` file, make some changes (you can rename this to `source/index.markdown` if you want).
-
-To see your changes locally, before publish everything, you can preview your site in `localhost:4000`, by doing
 
 ``` bash
 rake preview
 ```
-and then type `localhost:4000` in your browser. To really publish that you'll need always to generate and deploy, and then add-commit-push to `source`, as in this worklow:
+and then type `localhost:4000` in your browser. This will show your changes locally, before publishing everything, and instantly. To really publish that you'll need always to generate and deploy, and then add-commit-push to `source`, as in this worklow:
 
 ``` bash
 # modify some files
@@ -140,21 +144,58 @@ git add .
 git commit -m 'message'
 git push origin source
 ```
+## 4. Configure your site
 
+Before anything else, you need to do some basic configuration on your Octoptess site, like change its name, author, $\ldots$. These basic configurations are controled by one only file: `source/_config.yml`. There you will find many things to change and/or to keep as they are. The comments in it makes it easy to know what to do.
 
+Some more settings can be changed, and the definitive reference for that is the [Octopress configuration page][octo-config].
 
-To make a new page, you can use
+For more options of theming & customization, see the [Octopress template page][octo-template].
+
+## 5. New pages and new posts
+
+To make a new page, you can use the rake task
 
 ``` bash
 rake new_page[name]
 ```
-and to make a new blog post, you'll use
+This wil create a folder with an index file, e.g., `name/index.markdown`. To make it appear at the navigation bar of your site you'll have to edit `/source/_includes/custom/navigation.html` file.
+
+To make a new blog post, you'll use
 ``` bash
 rake new_post["post title here"]
 ```
 (note the quotes here). At this point, it's important to read Octopress documentation about [Blogging Basics][BB]. As it is well documented I will not repeat it here.
 
+## 6. Managing Octopress
 
+After some time, you may want to make some changes or make a new post on your Octopress site, but from another computer. This may happen even if you, e.g., format your hard-drive or lose your backup, $\ldots$.
+
+To keep blogging with your configured site from another place, just clone it to where you are now. For example, I would clone
+
+``` bash
+git clone git@github.com:fernandomayer/fernandomayer.github.com.git
+```
+
+This way you will have everything you need again to go on with your site the way you made it. The only detail here is that, after cloning, you will be at the `master` branch, not the `source` branch where you need to be. To see this, enter in the directory and type
+
+``` bash
+git branch
+# or
+git branch -a
+```
+
+To go back to your original environment where all your working files are, just switch to the `source` branch with
+
+``` bash
+git checkout source
+```
+and see the change with
+``` bash
+git branch
+```
+
+With these basic instructions, I hope you can use and manage your own Octopress site. Suggestions and other updates may be added here for future reference.
 
 
 [Octopress]: http://octopress.org
@@ -170,3 +211,11 @@ rake new_post["post title here"]
 [carl]: http://www.carlboettiger.info
 [carlpost]: http://www.carlboettiger.info/2012/12/30/learning-jekyll.html
 [BB]: http://octopress.org/docs/blogging/
+[git]: http://git-scm.com/
+[githelp]: https://help.github.com/articles/set-up-git
+[gitdoc]: http://git-scm.com/documentation
+[try-git]: http://www.codeschool.com/courses/try-git
+[codeschool]: http://www.codeschool.com
+[git-branching]: http://git-scm.com/book/en/Git-Branching
+[octo-config]: http://octopress.org/docs/configuring/
+[octo-template]: http://octopress.org/docs/theme/template/
