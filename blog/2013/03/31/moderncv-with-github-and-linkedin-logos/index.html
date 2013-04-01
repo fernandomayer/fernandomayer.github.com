@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Hello World! - Fernando Mayer</title>
+  <title>moderncv with GitHub and Linkedin logos - Fernando Mayer</title>
   <meta name="author" content="Fernando Mayer">
 
   
-  <meta name="description" content="Olá, mundo! Esse é o primeiro post do blog, e assim como um programa &#8220;Hello World!&#8221;, serve para testar se tudo está funcionando como &hellip;">
+  <meta name="description" content="The moderncv $\rm \LaTeX$ package provides a documentclass for typesetting curriculum vitaes in various formats and styles. With few, very defined &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://fernandomayer.github.com/blog/2012/08/06/hello-world/">
+  <link rel="canonical" href="http://fernandomayer.github.com/blog/2013/03/31/moderncv-with-github-and-linkedin-logos/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -109,7 +109,7 @@
   
   <header>
     
-      <h1 class="entry-title">Hello World!</h1>
+      <h1 class="entry-title">Moderncv With GitHub and Linkedin Logos</h1>
     
     
       <p class="meta">
@@ -125,73 +125,35 @@
   
 
 
-<time datetime="2012-08-06T23:51:00-03:00" pubdate data-updated="true">Aug 6<span>th</span>, 2012</time>
+<time datetime="2013-03-31T23:48:00-03:00" pubdate data-updated="true">Mar 31<span>st</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Olá, mundo!</p>
+<div class="entry-content"><p>The <a href="http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv/">moderncv</a> $\rm \LaTeX$ package provides a documentclass for typesetting curriculum vitaes in various formats and styles. With few, very defined commands, you can make a highly professional CV.</p>
 
-<p>Esse é o primeiro post do blog, e assim como um <a href="http://pt.wikipedia.org/wiki/Programa_Ol%C3%A1_Mundo">programa &#8220;Hello World!&#8221;</a>, serve para testar se tudo está funcionando como deveria.</p>
+<p>Many examples and templates are available out there, as the <a href="http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv/examples">examples folder</a> on CTAN webpage. From there, it can be seen that some commands are used to define the user&#8217;s personal information, such as the home address (<code>\address</code>), email (<code>\email</code>), and homepage (<code>\homepage</code>). However, in many cases, it is also important to point out other resources such as your <a href="http://github.com">GitHub</a> account and your <a href="http://linkedin.com">Linkedin</a> page.</p>
 
-<p>Como você pode ver, o blog foi construído através do <a href="http://octopress.org">Octopress</a> (<em>A blogging framework for hackers</em>, como ele mesmo diz), que por sua vez foi baseado no <a href="https://github.com/mojombo/jekyll/">Jekyll</a>, que foi construído para gerar páginas de <code>HTML</code> estáticas no <a href="https://github.com">GitHub</a>. Mas isso é assunto para um post inteiro, já que esse é o objetivo do blog ;)</p>
+<p>In order to add such information in <code>moderncv</code>, I made some modifications in the source code, and found the logos in this <a href="http://tex.stackexchange.com/questions/70216/adding-sections-such-as-linkedin-and-github-to-a-moderncv-footer">tex.stackexchange</a> thread. Now you can add your GitHub account and Linkedin page with <code>\github</code> and <code>\linkedin</code> commands from inside your <code>tex</code> file. The result should be something like this</p>
 
-<!-- more -->
+<p><img src="/files/posts/CV_en_example.png" alt="CV exampple" /></p>
 
+<p>To use this commands you will have to download the modified files from this <a href="https://github.com/fernandomayer/moderncv">GitHub repository</a>, put them in a folder and compile in the usual way. Make sure your source <code>tex</code> file is within this folder. In that repository there are template files to get you started (source <a href="https://github.com/fernandomayer/moderncv/blob/master/template_moderncv.tex">here</a> and pdf <a href="https://github.com/fernandomayer/moderncv/blob/master/template_moderncv.pdf">here</a>).</p>
 
-<p>Voltando ao &#8220;Hello World&#8221; (e ao teste de configuração), na página da <a href="http://pt.wikipedia.org/wiki/Programa_Ol%C3%A1_Mundo">Wikipedia linkada acima</a> está faltando uma forma de apresentar o programa no <code>R</code>! Portanto apresento aqui a maneira mais simples:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="o">&gt;</span> print<span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="s">&quot;Hello World!&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Ou, de maneira mais parecida à saída das outras linguagens em geral</p>
+<p>You can download a zipped file with all you need from <a href="https://github.com/fernandomayer/moderncv/archive/master.zip">here</a>, or you can clone it with <code>git</code></p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="o">&gt;</span> cat<span class="p">(</span><span class="s">&quot;Hello World!\n&quot;</span><span class="p">)</span>
-</span><span class='line'>Hello World!
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>git clone git@github.com:fernandomayer/moderncv.git
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>Repare no <code>\n</code> no final da sentença. Ele é um <a href="http://en.wikipedia.org/wiki/Escape_character"><em>escape</em></a> e serve para adicionar uma nova linha ao final, uma herança da linguagem <code>C</code>.</p>
+<p>For Brazilian users of <code>moderncv</code> I also made the <code>\lattes</code> command, so you can add the link for your full &#8221;<a href="http://lattes.cnpq.br/">Currículo Lattes</a>&#8221; CV, with the <a href="http://cnpq.br">CNPq</a> logo. This would look like this</p>
 
-<p>E, se quisermos deixar com mais cara de programa, podemos criar uma função, que aqui vou chamar de <code>hw</code></p>
+<p><img src="/files/posts/CV_pt-BR_example.png" alt="CV exampple" /></p>
 
-<figure class='code'><figcaption><span>Função para imprimir &#8220;Hello World&#8221; na tela</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='r'><span class='line'>hw <span class="o">&lt;-</span> <span class="kr">function</span><span class="p">(){</span>
-</span><span class='line'>    cat<span class="p">(</span><span class="s">&quot;Hello World!\n&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Executando&#8230;</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='r'><span class='line'><span class="o">&gt;</span> hw<span class="p">()</span>
-</span><span class='line'>Hello World!
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Assim fica fácil perceber a utilidade de um programa tão simples como esse. Se você não sabia e queria aprender como funciona uma função no <code>R</code>, agora fica mais fácil entender, não?</p>
-
-<p>Tão simples quanto o programa, seria se quiséssemos saber a probabilidade $P(\cdot)$ de sortear a letra <code>L</code> ao acaso, entre as letras das palavras <code>HELLO</code> e <code>WORLD</code> juntas. Esta probabilidade seria</p>
-
-<p>$$
-P(X = L) = \frac{3}{10} = 0.3
-$$</p>
-
-<p>Se você chegou até aqui, parabéns! Você e o Octopress passaram no teste de configuração!</p>
-
-<p><code>\V/ LLAP</code></p>
+<p>More technical details about these implementations can be found in the <a href="https://github.com/fernandomayer/moderncv#moderncv">GitHub repository</a>.</p>
 </div>
 
 
@@ -214,12 +176,12 @@ $$</p>
   
 
 
-<time datetime="2012-08-06T23:51:00-03:00" pubdate data-updated="true">Aug 6<span>th</span>, 2012</time>
+<time datetime="2013-03-31T23:48:00-03:00" pubdate data-updated="true">Mar 31<span>st</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/basics/'>Basics</a>, <a class='category' href='/blog/categories/octopress/'>Octopress</a>, <a class='category' href='/blog/categories/test/'>Test</a>
+    <a class='category' href='/blog/categories/customization/'>Customization</a>, <a class='category' href='/blog/categories/latex/'>LaTeX</a>
   
 </span>
 
@@ -228,7 +190,7 @@ $$</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://fernandomayer.github.com/blog/2012/08/06/hello-world/" data-via="fernando_mayer" data-counturl="http://fernandomayer.github.com/blog/2012/08/06/hello-world/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://fernandomayer.github.com/blog/2013/03/31/moderncv-with-github-and-linkedin-logos/" data-via="fernando_mayer" data-counturl="http://fernandomayer.github.com/blog/2013/03/31/moderncv-with-github-and-linkedin-logos/" >Tweet</a>
   
   
   
@@ -237,8 +199,8 @@ $$</p>
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2013/03/02/configuring-octopress/" title="Previous Post: Configuring Octopress">&laquo; Configuring Octopress</a>
       
-        <a class="basic-alignment right" href="/blog/2013/03/02/configuring-octopress/" title="Next Post: Configuring Octopress">Configuring Octopress &raquo;</a>
       
     </p>
   </footer>
@@ -361,8 +323,8 @@ This work is licensed under a <a rel="license"
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://fernandomayer.github.com/blog/2012/08/06/hello-world/';
-        var disqus_url = 'http://fernandomayer.github.com/blog/2012/08/06/hello-world/';
+        var disqus_identifier = 'http://fernandomayer.github.com/blog/2013/03/31/moderncv-with-github-and-linkedin-logos/';
+        var disqus_url = 'http://fernandomayer.github.com/blog/2013/03/31/moderncv-with-github-and-linkedin-logos/';
         var disqus_script = 'embed.js';
       
     (function () {

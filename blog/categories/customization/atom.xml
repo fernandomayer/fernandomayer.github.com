@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Customization | Fernando Mayer]]></title>
+  <link href="http://fernandomayer.github.com/blog/categories/customization/atom.xml" rel="self"/>
+  <link href="http://fernandomayer.github.com/"/>
+  <updated>2013-04-01T00:57:11-03:00</updated>
+  <id>http://fernandomayer.github.com/</id>
+  <author>
+    <name><![CDATA[Fernando Mayer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[moderncv with GitHub and Linkedin logos]]></title>
+    <link href="http://fernandomayer.github.com/blog/2013/03/31/moderncv-with-github-and-linkedin-logos/"/>
+    <updated>2013-03-31T23:48:00-03:00</updated>
+    <id>http://fernandomayer.github.com/blog/2013/03/31/moderncv-with-github-and-linkedin-logos</id>
+    <content type="html"><![CDATA[<p>The <a href="http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv/">moderncv</a> $\rm \LaTeX$ package provides a documentclass for typesetting curriculum vitaes in various formats and styles. With few, very defined commands, you can make a highly professional CV.</p>
+
+<p>Many examples and templates are available out there, as the <a href="http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv/examples">examples folder</a> on CTAN webpage. From there, it can be seen that some commands are used to define the user's personal information, such as the home address (<code>\address</code>), email (<code>\email</code>), and homepage (<code>\homepage</code>). However, in many cases, it is also important to point out other resources such as your <a href="http://github.com">GitHub</a> account and your <a href="http://linkedin.com">Linkedin</a> page.</p>
+
+<p>In order to add such information in <code>moderncv</code>, I made some modifications in the source code, and found the logos in this <a href="http://tex.stackexchange.com/questions/70216/adding-sections-such-as-linkedin-and-github-to-a-moderncv-footer">tex.stackexchange</a> thread. Now you can add your GitHub account and Linkedin page with <code>\github</code> and <code>\linkedin</code> commands from inside your <code>tex</code> file. The result should be something like this</p>
+
+<p><img src="/files/posts/CV_en_example.png" alt="CV exampple" /></p>
+
+<p>To use this commands you will have to download the modified files from this <a href="https://github.com/fernandomayer/moderncv">GitHub repository</a>, put them in a folder and compile in the usual way. Make sure your source <code>tex</code> file is within this folder. In that repository there are template files to get you started (source <a href="https://github.com/fernandomayer/moderncv/blob/master/template_moderncv.tex">here</a> and pdf <a href="https://github.com/fernandomayer/moderncv/blob/master/template_moderncv.pdf">here</a>).</p>
+
+<p>You can download a zipped file with all you need from <a href="https://github.com/fernandomayer/moderncv/archive/master.zip">here</a>, or you can clone it with <code>git</code></p>
+
+<p><code>bash
+git clone git@github.com:fernandomayer/moderncv.git
+</code></p>
+
+<p>For Brazilian users of <code>moderncv</code> I also made the <code>\lattes</code> command, so you can add the link for your full "<a href="http://lattes.cnpq.br/">Currículo Lattes</a>" CV, with the <a href="http://cnpq.br">CNPq</a> logo. This would look like this</p>
+
+<p><img src="/files/posts/CV_pt-BR_example.png" alt="CV exampple" /></p>
+
+<p>More technical details about these implementations can be found in the <a href="https://github.com/fernandomayer/moderncv#moderncv">GitHub repository</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
