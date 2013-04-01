@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Customization | Fernando Mayer]]></title>
   <link href="http://fernandomayer.github.com/blog/categories/customization/atom.xml" rel="self"/>
   <link href="http://fernandomayer.github.com/"/>
-  <updated>2013-04-01T00:57:11-03:00</updated>
+  <updated>2013-04-01T01:01:30-03:00</updated>
   <id>http://fernandomayer.github.com/</id>
   <author>
     <name><![CDATA[Fernando Mayer]]></name>
@@ -21,6 +21,9 @@
     <content type="html"><![CDATA[<p>The <a href="http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv/">moderncv</a> $\rm \LaTeX$ package provides a documentclass for typesetting curriculum vitaes in various formats and styles. With few, very defined commands, you can make a highly professional CV.</p>
 
 <p>Many examples and templates are available out there, as the <a href="http://www.ctan.org/tex-archive/macros/latex/contrib/moderncv/examples">examples folder</a> on CTAN webpage. From there, it can be seen that some commands are used to define the user's personal information, such as the home address (<code>\address</code>), email (<code>\email</code>), and homepage (<code>\homepage</code>). However, in many cases, it is also important to point out other resources such as your <a href="http://github.com">GitHub</a> account and your <a href="http://linkedin.com">Linkedin</a> page.</p>
+
+<!-- more -->
+
 
 <p>In order to add such information in <code>moderncv</code>, I made some modifications in the source code, and found the logos in this <a href="http://tex.stackexchange.com/questions/70216/adding-sections-such-as-linkedin-and-github-to-a-moderncv-footer">tex.stackexchange</a> thread. Now you can add your GitHub account and Linkedin page with <code>\github</code> and <code>\linkedin</code> commands from inside your <code>tex</code> file. The result should be something like this</p>
 
