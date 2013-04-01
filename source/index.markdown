@@ -13,6 +13,8 @@ My main research interests are in statistical models applied to environmental en
 
 I truly believe in an [open source][OA] world. Software, data, research, $\ldots$, must be open, so we can rapidly grow the human knowledge. In my [blog](/blog) I intend to share what I discover about open source software, mainly the [GNU/Linux][] operating system, the [R][] language and environment for statistical computing and graphics, and the document preparation system [$\rm \LaTeX$][Latex].
 
+More information about me can be found on this site and in my abbreviated CV in [english][en_CV] or [Brazilian portuguese][pt-BR_CV].
+
 ## Contact
 
 You can find me in
@@ -38,3 +40,5 @@ You can find me in
 [GNU/Linux]: http://en.wikipedia.org/wiki/Linux
 [R]: http://r-project.org
 [Latex]: http://www.latex-project.org/
+[en_CV]: files/CV_web/CV_Fernando_Mayer_en_web.pdf
+[pt-BR_CV]: files/CV_web/CV_Fernando_Mayer_pt-BR_web.pdf
