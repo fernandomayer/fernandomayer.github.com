@@ -10,6 +10,8 @@ The [moderncv][] $\rm \LaTeX$ package provides a documentclass for typesetting c
 
 Many examples and templates are available out there, as the [examples folder][ex_folder] on CTAN webpage. From there, it can be seen that some commands are used to define the user's personal information, such as the home address (`\address`), email (`\email`), and homepage (`\homepage`). However, in many cases, it is also important to point out other resources such as your [GitHub][] account and your [Linkedin][] page.
 
+<!-- more -->
+
 In order to add such information in `moderncv`, I made some modifications in the source code, and found the logos in this [tex.stackexchange][] thread. Now you can add your GitHub account and Linkedin page with `\github` and `\linkedin` commands from inside your `tex` file. The result should be something like this
 
 ![CV exampple](/files/posts/CV_en_example.png)
