@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | Fernando Mayer]]></title>
   <link href="http://fernandomayer.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://fernandomayer.github.com/"/>
-  <updated>2013-02-28T17:09:18-03:00</updated>
+  <updated>2013-03-31T23:33:08-03:00</updated>
   <id>http://fernandomayer.github.com/</id>
   <author>
     <name><![CDATA[Fernando Mayer]]></name>
@@ -12,6 +12,215 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Configuring Octopress]]></title>
+    <link href="http://fernandomayer.github.com/blog/2013/03/02/configuring-octopress/"/>
+    <updated>2013-03-02T01:45:00-03:00</updated>
+    <id>http://fernandomayer.github.com/blog/2013/03/02/configuring-octopress</id>
+    <content type="html"><![CDATA[<p>As you may have noted, this site is built upon <a href="http://octopress.org">Octopress</a>. As its website points out, Octopress</p>
+
+<blockquote><p>is a framework designed by Brandon Mathis for Jekyll, the blog aware static site generator powering Github Pages.</p></blockquote>
+
+<p><a href="http://github.com">GitHub</a> has a very nice feature, that let you build and host your website (for free!). The engine behind this is <a href="https://github.com/mojombo/jekyll">Jekyll</a>, which is "<em>a simple, blog aware, static site generator</em>". This means that if you push the right files into a GitHub repository, you'll get your site and/or blog readly available to the world. However, Octopress continues</p>
+
+<blockquote><p>To start blogging with Jekyll, you have to write your own HTML templates, CSS, Javascripts and set up your configuration. But with Octopress all of that is already taken care of. Simply clone or fork Octopress, install dependencies and the theme, and you’re set.</p></blockquote>
+
+<p>And that's true. If you want a pure Jekyll website you may have to write everything from scratch, or fork someone else's files. Unless you are a  HTML/CSS programmer, this may be a very long road. I tell this from my own experience. I've tried Jekyll for building this website, and I've got it. But it was taking me too much time to configure things the way I wanted. So I gave Octopress a try and here we are.</p>
+
+<!-- more -->
+
+
+<p>Jekyll is a fantastic engine, and Octopress made it more fantastic, configuring the basics, and letting you matter with more important things --- like blogging. However, Octopress also has its own peculiarities, some of them not really very clear to find out, specially if you are not very familiar with Ruby (the language it uses to build and generate pages), like me.</p>
+
+<p>Obviously, Octopress may have some disadvantages. The most clear to me are: (1) as anything that is a little bit automated, you may lack some learning from it (this is very important for the geeks out there), and (2) you will be just one out of thousands (?) with the same site (blog) layout. But, you may also turn this disadvantages on your favor. As you own the source code, you can learn from it and find out how to configure and modify the default theme the way you want. That's up to you to decide what's the best thing to use. For example, a very nice discussion (and introduction to Jekyll) was written by <a href="http://www.carlboettiger.info">Carl Boettiger</a> in this <a href="http://www.carlboettiger.info/2012/12/30/learning-jekyll.html">blog post</a>.</p>
+
+<p>Below I'll show the steps I made to put this site up and running. Obviously I followed the steps in the <a href="http://octopress.org/docs/setup/">Octopress setup page</a>, but some things are not really obvious, so I'll put them here.</p>
+
+<h2>0. Install git (and learn how to use it)</h2>
+
+<p>First thing is to have some familiarity with <a href="http://git-scm.com/">git</a>, or else we're going nowhere. To install git in Linux, use your package manager, as for example in Ubuntu</p>
+
+<p><code>bash
+sudo apt-get install git git-core git-man git-gui git-doc
+</code>
+You may also need <code>ssh</code>, <code>openssh-server</code>, <code>openssh-client</code>, depending on your system. Then configure your <a href="https://help.github.com/articles/set-up-git">GitHub account</a> (if you still didn't).</p>
+
+<p>If you are not very familiar with git, read the <a href="http://git-scm.com/documentation">documentation</a>, and learn by doing with <a href="http://www.codeschool.com/courses/try-git">try-git</a> at <a href="http://www.codeschool.com">codeschool</a>. It is a very good idea to focus on <a href="http://git-scm.com/book/en/Git-Branching">git-branching</a>, since we'll use branches hereafter.</p>
+
+<h2>1. Install Ruby</h2>
+
+<p>Octopress requires <a href="http://www.ruby-lang.org/en/">Ruby</a> 1.9.3 to run. You can install it with your default package manager (<em>e.g.</em> apt, pacman), or with RVM, the Ruby Version Manager.</p>
+
+<h3>1.1 Install Ruby from a package manager</h3>
+
+<p>In Ubuntu $\geq$ 12.04 specifically, there is a package called <code>ruby1.9.1</code>, which, despite the name, installs Ruby 1.9.3. Also, there is a package (actually, a metapackage) called <code>ruby1.9.3</code>, which is just a symbolic link to install <code>ruby1.9.1</code>. As you will need the <code>-dev</code> (and others) files too, the best way is to install <code>ruby1.9.1-full</code>, in the usual manner:</p>
+
+<p><code>bash
+sudo apt-get install ruby1.9.1-full
+</code></p>
+
+<h3>1.2 Install Ruby from RVM</h3>
+
+<p>To install Ruby with RVM, first we need to install RVM itself. (You will need <code>curl</code> installed).</p>
+
+<p><code>bash
+curl -L https://get.rvm.io | bash -s stable --ruby
+</code></p>
+
+<!-- Precisa ver o detalhe do .bashrc aqui -->
+
+
+<p>And follow the instructions thereafter. Then install Ruby 1.9.3, and make it in use with</p>
+
+<p><code>bash
+rvm install 1.9.3
+rvm use 1.9.3
+</code></p>
+
+<p>After that you will need to install <a href="http://rubygems.org/">RubyGems</a>, a package manager used to install Ruby contributed libraries (called gems). It works in a similar way as apt or pacman does for your Linux system. To install its latest version</p>
+
+<p><code>bash
+rvm rubygems latest
+</code></p>
+
+<blockquote><p>NOTE: if you installed via, <em>e.g.</em>, apt, rubygems is already there.</p></blockquote>
+
+<h2>2. Set up Octopress</h2>
+
+<p>After installing Ruby you have to get the basic structure of Octopress from its repository on GitHub. You do this by cloning the repository with</p>
+
+<p><code>bash
+git clone git://github.com/imathis/octopress.git octopress
+</code></p>
+
+<p>This will create a directory called <code>octopress</code>, then you <code>cd</code> to it and install the dependencies needed with <a href="http://gembundler.com/">Bundler</a></p>
+
+<p><code>bash
+cd octopress    # If you use RVM, You'll be asked if you trust the .rvmrc file (say yes).
+sudo gem install bundler
+sudo bundle install
+</code></p>
+
+<p>What Bundler do is to follow the instructions contained in the files <code>Gemfile</code> and <code>Gemfile.lock</code>, and install all the gems (the dependencies here) specified there.</p>
+
+<p>Now install tha default Octopress theme by using <code>rake</code></p>
+
+<p><code>bash
+rake install
+</code></p>
+
+<p><a href="http://rake.rubyforge.org/">Rake</a> is a program similar to the <a href="http://www.gnu.org/software/make/">GNU Make</a>, but for Ruby. It build things from a <code>Rakefile</code>, in the same way that <code>make</code> build things from a <code>makefile</code>. It's important to be familiar with this concept, since we'll use <code>rake</code> tasks for many things in Octopress from now on.</p>
+
+<h2>3. Publish from GitHub</h2>
+
+<p>So far you've just built your Octopress site locally. To publish it from GitHub you have to create a new repository with your username followed by the GitHub domain. For example, my username is <code>fernandomayer</code>, so I've created a repository named <code>fernandomayer.github.com</code>. GitHub intelligently understands that the contents of this repository should be a website (any other names won't do it), and it will make it available at <code>http://fernandomayer.github.com</code>. (You can use <a href="http://octopress.org/docs/deploying/github/#custom_domains">custom domains</a> though).</p>
+
+<p>To finally setup your website to work with GitHub, use this <code>rake</code> task</p>
+
+<p><code>bash
+rake setup_github_pages
+</code></p>
+
+<p>and follow the instructions. In summary this will configure everything you need:</p>
+
+<ul>
+<li>create a <code>source</code> branch in which you'll work with the source files for your site</li>
+<li>create a <code>master</code> branch inside <code>_deploy/</code> directory</li>
+</ul>
+
+
+<p><strong>This is very important</strong>: GitHub will publish your site with the contents that are available in the <code>master</code> branch <strong>only</strong>. That means that everything under <code>_deploy/</code> will be used. All other files, that are in the <code>source</code> branch will be used as <strong>working</strong> files, <em>i.e.</em>, you will create, write and modify everything in the <code>source</code> branch (particularly at the <code>source/</code> directory), then Octopress will generate and deploy it to <code>_deploy/</code>. This is done with this two <code>rake</code> tasks:</p>
+
+<p><code>bash
+rake generate
+rake deploy
+</code></p>
+
+<p>This will generate the appropriate files, copy them to <code>_deploy/</code> and <code>add</code>, <code>commit</code> and <code>push</code> to its <code>master</code> branch (automatically!). So, to keep record of your changes in git you will also have to add-commit-push to the <code>source</code> branch</p>
+
+<p><code>bash
+git add .
+git commit -m 'message'
+git push origin source
+</code>
+At this point, you'll want to see your website (still with no modifications) at the default adress, e.g., <code>http://fernandomayer.github.com</code>. But, as you make changes (shown below), you'll want to see these changes instantly, right? You don't need to make all this process of generating, deploying, $\ldots$, every time you make a minor change. For that you can use this rake task</p>
+
+<p><code>bash
+rake preview
+</code>
+and then type <code>localhost:4000</code> in your browser. This will show your changes locally, before publishing everything, and instantly. To really publish that you'll need always to generate and deploy, and then add-commit-push to <code>source</code>, as in this worklow:</p>
+
+<p>``` bash</p>
+
+<h1>modify some files</h1>
+
+<p>rake generate
+rake deploy</p>
+
+<h1>now keep track of them at source</h1>
+
+<p>git add .
+git commit -m 'message'
+git push origin source
+```</p>
+
+<h2>4. Configure your site</h2>
+
+<p>Before anything else, you need to do some basic configuration on your Octoptess site, like change its name, author, $\ldots$. These basic configurations are controled by one only file: <code>source/_config.yml</code>. There you will find many things to change and/or to keep as they are. The comments in it makes it easy to know what to do.</p>
+
+<p>Some more settings can be changed, and the definitive reference for that is the <a href="http://octopress.org/docs/configuring/">Octopress configuration page</a>.</p>
+
+<p>For more options of theming &amp; customization, see the <a href="http://octopress.org/docs/theme/template/">Octopress template page</a>.</p>
+
+<h2>5. New pages and new posts</h2>
+
+<p>To make a new page, you can use the rake task</p>
+
+<p><code>bash
+rake new_page[name]
+</code>
+This wil create a folder with an index file, e.g., <code>name/index.markdown</code>. To make it appear at the navigation bar of your site you'll have to edit <code>/source/_includes/custom/navigation.html</code> file.</p>
+
+<p>To make a new blog post, you'll use
+<code>bash
+rake new_post["post title here"]
+</code>
+(note the quotes here). At this point, it's important to read Octopress documentation about <a href="http://octopress.org/docs/blogging/">Blogging Basics</a>. As it is well documented I will not repeat it here.</p>
+
+<h2>6. Managing Octopress</h2>
+
+<p>After some time, you may want to make some changes or make a new post on your Octopress site, but from another computer. This may happen even if you, e.g., format your hard-drive or lose your backup, $\ldots$.</p>
+
+<p>To keep blogging with your configured site from another place, just clone it to where you are now. For example, I would clone</p>
+
+<p><code>bash
+git clone git@github.com:fernandomayer/fernandomayer.github.com.git
+</code></p>
+
+<p>This way you will have everything you need again to go on with your site the way you made it. The only detail here is that, after cloning, you will be at the <code>master</code> branch, not the <code>source</code> branch where you need to be. To see this, enter in the directory and type</p>
+
+<p>``` bash
+git branch</p>
+
+<h1>or</h1>
+
+<p>git branch -a
+```</p>
+
+<p>To go back to your original environment where all your working files are, just switch to the <code>source</code> branch with</p>
+
+<p><code>bash
+git checkout source
+</code>
+and see the change with
+<code>bash
+git branch
+</code></p>
+
+<p>With these basic instructions, I hope you can use and manage your own Octopress site. Suggestions and other updates may be added here for future reference.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello World!]]></title>

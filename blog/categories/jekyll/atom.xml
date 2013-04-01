@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Basics | Fernando Mayer]]></title>
-  <link href="http://fernandomayer.github.com/blog/categories/basics/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Jekyll | Fernando Mayer]]></title>
+  <link href="http://fernandomayer.github.com/blog/categories/jekyll/atom.xml" rel="self"/>
   <link href="http://fernandomayer.github.com/"/>
   <updated>2013-03-31T23:33:08-03:00</updated>
   <id>http://fernandomayer.github.com/</id>
@@ -219,70 +219,6 @@ git branch
 </code></p>
 
 <p>With these basic instructions, I hope you can use and manage your own Octopress site. Suggestions and other updates may be added here for future reference.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World!]]></title>
-    <link href="http://fernandomayer.github.com/blog/2012/08/06/hello-world/"/>
-    <updated>2012-08-06T23:51:00-03:00</updated>
-    <id>http://fernandomayer.github.com/blog/2012/08/06/hello-world</id>
-    <content type="html"><![CDATA[<p>Olá, mundo!</p>
-
-<p>Esse é o primeiro post do blog, e assim como um <a href="http://pt.wikipedia.org/wiki/Programa_Ol%C3%A1_Mundo">programa "Hello World!"</a>, serve para testar se tudo está funcionando como deveria.</p>
-
-<p>Como você pode ver, o blog foi construído através do <a href="http://octopress.org">Octopress</a> (<em>A blogging framework for hackers</em>, como ele mesmo diz), que por sua vez foi baseado no <a href="https://github.com/mojombo/jekyll/">Jekyll</a>, que foi construído para gerar páginas de <code>HTML</code> estáticas no <a href="https://github.com">GitHub</a>. Mas isso é assunto para um post inteiro, já que esse é o objetivo do blog ;)</p>
-
-<!-- more -->
-
-
-<p>Voltando ao "Hello World" (e ao teste de configuração), na página da <a href="http://pt.wikipedia.org/wiki/Programa_Ol%C3%A1_Mundo">Wikipedia linkada acima</a> está faltando uma forma de apresentar o programa no <code>R</code>! Portanto apresento aqui a maneira mais simples:</p>
-
-<p>``` r</p>
-
-<blockquote><p>print("Hello World!")
-[1] "Hello World!"
-```
-Ou, de maneira mais parecida à saída das outras linguagens em geral</p></blockquote>
-
-<p>``` r</p>
-
-<blockquote><p>cat("Hello World!\n")
-Hello World!
-```</p></blockquote>
-
-<p>Repare no <code>\n</code> no final da sentença. Ele é um <a href="http://en.wikipedia.org/wiki/Escape_character"><em>escape</em></a> e serve para adicionar uma nova linha ao final, uma herança da linguagem <code>C</code>.</p>
-
-<p>E, se quisermos deixar com mais cara de programa, podemos criar uma função, que aqui vou chamar de <code>hw</code></p>
-
-<p>``` r Função para imprimir "Hello World" na tela
-hw &lt;- function(){</p>
-
-<pre><code>cat("Hello World!\n")
-</code></pre>
-
-<p>}
-```</p>
-
-<p>Executando...</p>
-
-<p>``` r</p>
-
-<blockquote><p>hw()
-Hello World!
-```</p></blockquote>
-
-<p>Assim fica fácil perceber a utilidade de um programa tão simples como esse. Se você não sabia e queria aprender como funciona uma função no <code>R</code>, agora fica mais fácil entender, não?</p>
-
-<p>Tão simples quanto o programa, seria se quiséssemos saber a probabilidade $P(\cdot)$ de sortear a letra <code>L</code> ao acaso, entre as letras das palavras <code>HELLO</code> e <code>WORLD</code> juntas. Esta probabilidade seria</p>
-
-<p>$$
-P(X = L) = \frac{3}{10} = 0.3
-$$</p>
-
-<p>Se você chegou até aqui, parabéns! Você e o Octopress passaram no teste de configuração!</p>
-
-<p><code>\V/ LLAP</code></p>
 ]]></content>
   </entry>
   
