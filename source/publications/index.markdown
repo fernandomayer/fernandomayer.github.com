@@ -9,7 +9,7 @@ footer: true
 
 ## Peer-reviewed publications
 
-Bender, M. G.; Floeter, S. R.; Mayer, F. P.; Vila-Nova, D. A.; Longo, G. O.; Hanazaki, N.; Carvalho-Filho, A.; Ferreira, C. E. L. 2013. Biological attributes and major threats as predictors of the vulnerability of species: a case study with Brazilian reef fishes. **[Oryx][]** (Oxford Print), *in press*.
+Bender, M. G.; Floeter, S. R.; Mayer, F. P.; Vila-Nova, D. A.; Longo, G. O.; Hanazaki, N.; Carvalho-Filho, A.; Ferreira, C. E. L. 2013. Biological attributes and major threats as predictors of the vulnerability of species: a case study with Brazilian reef fishes. **[Oryx][]** (Oxford Print), *in press*. DOI: 10.1017/S003060531100144X
 
 Mayer, F. P. & Andrade, H. A. 2008. Size of yellowfin tuna (*Thunnus albacares*) caught by pole-and-line fleet in the southwestern Atlantic ocean. **[Brazilian Journal of Aquatic Science and Technology][BJAST]**, 12(1): 59-62. [PDF][BJAST1]
 
