@@ -9,7 +9,7 @@ footer: true
 
 ## Peer-reviewed publications
 
-Bender, M. G.; Floeter, S. R.; Mayer, F. P.; Vila-Nova, D. A.; Longo, G. O.; Hanazaki, N.; Carvalho-Filho, A.; Ferreira, C. E. L. 2013. Biological attributes and major threats as predictors of the vulnerability of species: a case study with Brazilian reef fishes. **[Oryx][]** (Oxford Print), *in press*. DOI: 10.1017/S003060531100144X
+Bender, M. G.; Floeter, S. R.; Mayer, F. P.; Vila-Nova, D. A.; Longo, G. O.; Hanazaki, N.; Carvalho-Filho, A.; Ferreira, C. E. L. 2013. Biological attributes and major threats as predictors of the vulnerability of species: a case study with Brazilian reef fishes. **[Oryx][]** (Oxford Print), 47(2): 259-265. [DOI: 10.1017/S003060531100144X][DOI]. [PDF][ORYX1]
 
 Mayer, F. P. & Andrade, H. A. 2008. Size of yellowfin tuna (*Thunnus albacares*) caught by pole-and-line fleet in the southwestern Atlantic ocean. **[Brazilian Journal of Aquatic Science and Technology][BJAST]**, 12(1): 59-62. [PDF][BJAST1]
 
@@ -36,3 +36,5 @@ Mayer, F. P. 2009. Count data models considering overdispersion and excess zeros
 [RBRAS54]: http://www.rbras.org.br/rbras54/
 [RBRAS1]: ./Mayer_et_al_RBRAS_2011.pdf
 [RBRAS2]: ./Mayer_RBRAS_2009.pdf
+[DOI]: http://dx.doi.org/10.1017/S003060531100144X
+[ORYX1]: http://journals.cambridge.org/action/displayFulltext?type=1&fid=8893959&jid=ORX&volumeId=47&issueId=02&aid=8893957&bodyId=&membershipNumber=&societyETOCSession=
