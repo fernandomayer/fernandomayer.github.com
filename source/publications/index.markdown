@@ -21,7 +21,7 @@ Mayer, F. P., Andrade, H. A. 2003. Catch, effort and CPUE of swordfish (*Xiphias
 
 ## Extended abstracts
 
-Mayer, F. P.; Bonat, W. H.; Ribeiro Jr., P. J. 2011. Spatio-temporal modelling of catches in commercial fisheries trough hierarchical Bayesian models with latent Gaussian structure. *In*: [56 Annual Brazilian Region meeting of the International Biometric Society][RBRAS56]. [PDF][RBRAS1] (*In portuguese*).
+Mayer, F. P.; Bonat, W. H.; Ribeiro Jr., P. J. 2011. Spatio-temporal modelling of catches in commercial fisheries through hierarchical Bayesian models with latent Gaussian structure. *In*: [56 Annual Brazilian Region meeting of the International Biometric Society][RBRAS56]. [PDF][RBRAS1] (*In portuguese*).
 
 Mayer, F. P. 2009. Count data models considering overdispersion and excess zeros for abundance estimates of uncommon species in commercial fisheries. *In*: [54 Annual Brazilian Region meeting of the International Biometric Society][RBRAS54]. [PDF][RBRAS2] (*In portuguese*)
 
